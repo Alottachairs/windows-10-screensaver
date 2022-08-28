@@ -16,8 +16,10 @@ window.fps_counter.enabled = False
 #				visible=False)
 
 count = 0
+limit = 200
 
 def place_cube(value=.1, interval=0.15):
+	global limit
 	global count
 	count += 1
 	#counter.text = str(count) + " Entitys"
@@ -31,7 +33,7 @@ def place_cube(value=.1, interval=0.15):
 			   	scale = .5,
 			   	ignore = True,)
 	e.animate_z(-10, loop=True, delay=.1, duration=2,)
-	if count < 200:
+	if count < limit:
 		invoke(place_cube, value, delay=interval,)
 		destroy(e, delay=4)
 		count -= 1
