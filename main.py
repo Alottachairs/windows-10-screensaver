@@ -20,7 +20,7 @@ window.fps_counter.enabled = False
 count = 0
 cooldown = False
 
-def place_cube(value=1, interval=.1):
+def place_cube(value=1, interval=0.2):
 	global count
 	count += 1
 	counter.text = str(count) + " Spheres :)"
