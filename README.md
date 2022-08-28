@@ -1,8 +1,8 @@
 # Windows-10-screensaver
-##Built with Ursina engine
+## Built with Ursina engine
 ---
 
-##To install:
+## To install:
 
 Download and install latest version of python (3.10)
 
