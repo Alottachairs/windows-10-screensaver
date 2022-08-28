@@ -17,18 +17,18 @@ window.exit_button.enabled = False
 window.fps_counter.enabled = False
 
 count = 0
-cooldown = False
 
 def place_cube(value=1, interval=0.2):
 	global count
 	count += 1
 	counter.text = str(count) + " Spheres :)"
 	#counter.color = color.random_color()
-	e = Sprite( color = color.random_color(), 
+	e = Sprite( model = 'quad',
+				color = color.random_color(), 
 			   	x = r.randint(-80,80),
 			   	y = r.randint(-80,80),
 			   	z = r.randint(200,205),
-			   	texture = 'windows_icon2',
+			   	#texture = 'windows_icon2',
 			   	scale = .3,
 			   	ignore = True,)
 	e.animate_z(-10, loop=True, delay=.2, duration=2,)
