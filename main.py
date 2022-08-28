@@ -20,7 +20,7 @@ count = 0
 def place_cube(value=.1, interval=0.15):
 	global count
 	count += 1
-	#counter.text = str(count) + " Spheres :)"
+	#counter.text = str(count) + " Entitys"
 	#counter.color = color.random_color()
 	e = Sprite( model = 'quad',
 				color = color.random_color(), 
@@ -42,5 +42,5 @@ def input(key):
 	if key:
 		application.quit()
 
-EditorCamera()
+#EditorCamera()
 app.run()
